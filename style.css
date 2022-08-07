@@ -1,0 +1,145 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', 'Poppins', sans-serif;
+  font-size: 14px;
+}
+
+body {
+  background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.instagram-wrapper {
+  width: 60%;
+  /* height: 100vh; */
+  display: flex;
+  align-items: center;
+}
+
+.instagram-phone {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.instagram-phone img {
+  height: 40rem;
+}
+
+.instagram-continue {
+  width: 50%;
+  min-height: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.group {
+  width: 80%;
+  padding: 1.3rem 0;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(211, 211, 211);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.group:nth-child(1) {
+  min-height: 20rem;
+}
+
+.instagram-logo {
+  height: 3rem;
+}
+
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  height: 8rem;
+}
+
+.instagram-login {
+  background-color: rgb(0, 149, 246);
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  border-radius: .5rem;
+  color: rgb(255, 255, 255);
+}
+
+.instagram-logout {
+  color: rgb(0, 149, 246);
+  margin-top: 1rem;
+}
+
+.not-account {
+  color: rgb(160, 160, 160);
+}
+
+.link-blue {
+  color: rgb(0, 149, 246);
+}
+
+.instagram-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: rgb(160, 160, 160);
+}
+
+.footer-copyright {
+  color: rgb(160, 160, 160);
+}
+
+@media (max-width: 1024px) {
+  .instagram-wrapper{
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
+
+  .group {
+    width: 100%;
+  }
+  
+  .instagram-logo {
+    height: 3rem;
+  }
+
+  .profile-photo img {
+    height: 10rem;
+  }
+}
